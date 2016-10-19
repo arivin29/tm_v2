@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="481dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_man"  />
+
+
+
+            <!--1-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/nama_opr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Operator"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:maxLines="1"
+                    android:text="Muhammad Arifin"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_color"
+                    android:textColorLink="@android:color/holo_orange_dark" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--2-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/nip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIP Operator"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:maxLines="1"
+                    android:text="IKN-978087-98-2016"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_color"
+                    style="@style/Widget.AppCompat.EditText" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="776dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_barcode"  />
+
+
+            <!--1-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kode_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode Barcode"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    style="@style/Widget.AppCompat.EditText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--2-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/asdas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Operator"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:maxLines="1"
+                    android:text="Muhammad Arifin"
+                    android:singleLine="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    style="@style/Widget.AppCompat.EditText" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
