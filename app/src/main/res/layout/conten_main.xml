@@ -10,127 +10,334 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark">
 
-        <LinearLayout
-            android:orientation="vertical"
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#5fb0c9"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="30dp"
-                android:src="@drawable/ic_man"  />
-
-
-
-            <!--1-->
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:theme="@style/AppTheme"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center_horizontal"
+                android:text="OPERATOR"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="200dp"
+                android:layout_below="@+id/login_title"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:orientation="vertical"
                 android:padding="20dp">
 
-                <EditText
-                    android:id="@+id/nama_opr"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nama Operator"
-                    android:inputType="text"
-                    android:editable="false"
-                    android:maxLines="1"
-                    android:text="Muhammad Arifin"
-                    android:singleLine="true"
-                    android:textColor="@color/primary_color"
-                    android:textColorLink="@android:color/holo_orange_dark" />
-            </android.support.design.widget.TextInputLayout>
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <!--1-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:id="@+id/nama_opr"
+                            android:layout_height="wrap_content"
+                            android:drawableTint="#FF4081"
+                            android:singleLine="true"
+                            android:hint="Nama Operator"
+                            android:text="MUHAMMAD ARIFIN"
+
+                            android:focusable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--2-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp">
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:id="@+id/nip_opr"
+                            android:layout_height="wrap_content"
+                            android:drawableTint="#FF4081"
+                            android:singleLine="true"
+                            android:hint="NIP Operator"
+                            android:text="TM-098-8343-23-16"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
 
 
-            <!--2-->
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp">
+                    <!--3-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp">
 
-                <EditText
-                    android:id="@+id/nip"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="NIP Operator"
-                    android:inputType="text"
-                    android:editable="false"
-                    android:maxLines="1"
-                    android:text="IKN-978087-98-2016"
-                    android:singleLine="true"
-                    android:textColor="@color/primary_color"
-                    style="@style/Widget.AppCompat.EditText" />
-            </android.support.design.widget.TextInputLayout>
-
-
-
-
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:id="@+id/pelabuhan"
+                            android:layout_height="wrap_content"
+                            android:drawableTint="#FF4081"
+                            android:singleLine="true"
+                            android:hint="Pelabuhan"
+                            android:text="TANJUNG PRIOKS"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+                    </android.support.design.widget.TextInputLayout>
 
 
-        </LinearLayout>
+                    <!--4-->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp">
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:id="@+id/kode_pelabuhan"
+                            android:layout_height="wrap_content"
+                            android:drawableTint="#FF4081"
+                            android:singleLine="true"
+                            android:text="TNJ-09"
+                            android:hint="Kode Pelabuhan"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/user_profile_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/login_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_putih_shadaw"
+                android:elevation="4dp"
+                android:src="@drawable/ic_man_200" />
+        </RelativeLayout>
+
 
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="776dp"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="30dp"
-                android:src="@drawable/ic_barcode"  />
-
-
-            <!--1-->
-            <android.support.design.widget.TextInputLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/kode_barcode"
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Kode Barcode"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:textColor="@android:color/holo_blue_dark"
-                    style="@style/Widget.AppCompat.EditText" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/ic_barcode"
+                    android:background="#e1e1e1"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/baca_barcode" />
 
-            <!--2-->
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <EditText
-                    android:id="@+id/asdas"
+                <!--1-->
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nama Operator"
-                    android:inputType="text"
-                    android:editable="false"
-                    android:maxLines="1"
-                    android:text="Muhammad Arifin"
-                    android:singleLine="true"
-                    android:textColor="@android:color/holo_blue_dark"
-                    style="@style/Widget.AppCompat.EditText" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:id="@+id/kode_barcode"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:hint="Kode Barcode"
+                        android:text=""
+
+                        android:focusable="false"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--2-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:id="@+id/nama_kapal"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:hint="NAMA KAPAL"
+                        android:text="CAHAYA PAGI SMG 08"
+
+                        android:focusable="false"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--3-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:id="@+id/kode_izin"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:hint="NO IZIN KAPAL"
+                        android:text="88978-5459-95845-454-1"
+
+                        android:focusable="false"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--4-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:id="@+id/pemilik_kapal"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:hint="Pemilik Kapal"
+                        android:text="UGI SANTPOSA"
+
+                        android:focusable="false"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--5-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:id="@+id/alat_tangkap"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:hint="Alat Tangkap"
+                        android:text="PUKAT HARIMAU"
+
+                        android:focusable="false"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+                </android.support.design.widget.TextInputLayout>
 
 
 
 
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="774dp"
+            android:layout_height="62dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:text="Lanjutkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Design.Tab"
+                android:padding="10dp" />
+
+            <Button
+                android:text="Timbang"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:id="@+id/next_timbang"
+                android:layout_weight="0.28"
+                android:drawableRight="@drawable/ic_next_w"
+                android:elevation="0dp"
+                android:textColor="@color/white"
+                android:background="@color/btn_logut_bg"
+                android:textSize="18sp"
+                android:textStyle="normal|italic" />
         </LinearLayout>
 
 
