@@ -1,0 +1,12 @@
+<tabs>
+    <tab
+        id="@+id/tab_info_2"
+        icon="@drawable/ic_info"
+        barColorWhenSelected="#26ae90"
+        title="Info" />
+    <tab
+        id="@+id/tab_survey_2"
+        icon="@drawable/ic_clipboard"
+        barColorWhenSelected="#ff6861"
+        title="Survey" />
+</tabs>

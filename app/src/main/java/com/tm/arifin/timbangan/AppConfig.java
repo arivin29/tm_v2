@@ -13,15 +13,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AppConfig {
 
-    public static final String BASE_URL = "http://arivin.xyz/TM/public/";
+    public static final String BASE_URL = "http://arivin.xyz/data_pdam/public/api/";
 //    public static final String BASE_URL = Pengaturan.url;
+        public static String NAMA_PELANGGAN = null;
 
 
-    public static final String KEY_KAPAL = "";
-    public static String BACA_BARCODE = null;
-    public static String IP_MONITOR = "";
-    public static int ID_IKAN = 0;
-    public static String NAMA_KAPAL = "CAHAYA PAGI SMG 8";
 
 
     public static boolean LOGIN = false;

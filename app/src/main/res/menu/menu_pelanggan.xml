@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity" >
+    <item android:id="@+id/action_search"
+        android:title="Cari Pelanggan"
+        android:orderInCategory="100"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+    <item
+        android:id="@+id/action_aktif"
+        android:orderInCategory="100"
+        android:title="Aktif"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_pending"
+        android:orderInCategory="100"
+        android:title="Pending"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_survey"
+        android:orderInCategory="100"
+        android:title="Survey"
+        app:showAsAction="never"/>
+</menu>

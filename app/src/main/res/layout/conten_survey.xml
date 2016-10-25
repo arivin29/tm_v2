@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- This could be your fragment container, or something -->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/info_pelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#5fb0c9"
+                    android:orientation="vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="200dp"
+                        android:background="#fff"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:layout_marginBottom="100dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="30dp">
+
+                            <!--1-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/nama_pelanggan"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="Nama Pelanggan"
+                                    android:text="MUHAMMAD ARIFIN"
+
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--2-->
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/nip_opr"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="No KTP"
+                                    android:text="TM-098-8343-23-16"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <!--3-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/pelabuhan"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="No Telfon"
+                                    android:text="021-25425"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="bold" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <!--4-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/kode_pelabuhan"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:text="08567076097"
+                                    android:hint="Hp"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="normal|bold" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--5-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/kode_pos"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:text="Kode Pos"
+                                    android:hint="26253"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="normal|bold" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--6-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/kab_kot"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="false"
+                                    android:text="kab / Kot "
+                                    android:hint="50 Koto"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="normal|bold"
+                                    android:capitalize="characters" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--6-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/kecematan"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="false"
+                                    android:text="Kecematan "
+                                    android:hint="Guguak"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="normal|bold"
+                                    android:capitalize="characters" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--6-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/alamat"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="false"
+                                    android:text="Kubang Tungkek "
+                                    android:hint="Alamat"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="normal|bold"
+                                    android:capitalize="characters" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/user_profile_photo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_putih_shadaw"
+                        android:elevation="4dp"
+                        android:src="@drawable/ic_man_200" />
+                </RelativeLayout>
+
+                <!--<include android:id="@+id/data_survey" layout="@layout/data_survey"></include>-->
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/data_survey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="#5fb0c9"
+                    android:orientation="vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+                    <TextView
+                        android:id="@+id/login_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="22dp"
+                        android:gravity="center_horizontal"
+                        android:text="Survey"
+                        android:textColor="#fff"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:layout_marginBottom="100dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="30dp">
+
+                            <!--1-->
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/jenis_pemakaian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Jenis Pemakaian"
+                                android:textColorHint="#05ab9a"
+                                app:met_floatingLabel="normal" />
+
+
+
+                            <!--1-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/banyak_kran"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="Banyak Kran"
+                                    android:inputType="textEmailAddress"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--3-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/jumlah_penghuni"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="Jumlah Penghuni"
+                                    android:inputType="textEmailAddress"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/menjual_air"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Menjual Air"
+                                android:textColorHint="#05ab9a"
+                                app:met_floatingLabel="normal" />
+
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/status_rumah"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Status Rumah"
+                                android:textColorHint="#05ab9a"
+                                app:met_floatingLabel="normal" />
+
+
+
+                            <!--Keterangan-->
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/keterangan"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="#FF4081"
+                                    android:singleLine="true"
+                                    android:hint="Keterangan"
+                                    android:inputType="textEmailAddress"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <TextView
+                                android:text="Media (Foto / Video )"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView2"
+                                android:layout_weight="1"
+                                android:textSize="18sp"
+                                android:layout_marginTop="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/selector_button"
+                                    android:id="@+id/buttonCapture"
+                                    android:src="@drawable/ic_photo_camera"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/bg_register"
+                                    android:textSize="@dimen/component_button_small" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:text="List Media"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3"
+                                android:layout_weight="1"
+                                android:textSize="18sp"
+                                android:layout_marginTop="10dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="top"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/gambar"
+                                android:clickable="true"
+                                android:background="@color/primary_color_dark"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="top"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/gambar_2"
+                                android:clickable="true"
+                                android:background="@color/primary_color_dark"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="top"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/gambar_3"
+                                android:clickable="true"
+                                android:background="@color/primary_color_dark"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="top"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/gambar_4"
+                                android:clickable="true"
+                                android:background="@color/primary_color_dark"/>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <!--MAPS-->
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/data_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="#5fb0c9"
+                    android:orientation="vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="419dp"
+                            tools:context=".Map" />
+
+
+
+                                <TextView
+                                    android:text="Lokasi Anda (  )"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/lon_lat"
+                                    android:layout_weight="1"
+                                    android:textSize="18sp"
+                                    android:textAlignment="center"
+                                    android:background="@color/white"
+                                    android:paddingTop="10dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tab"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

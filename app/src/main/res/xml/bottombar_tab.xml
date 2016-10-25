@@ -1,0 +1,17 @@
+<tabs>
+    <tab
+        id="@+id/tab_info"
+        icon="@drawable/ic_info"
+        barColorWhenSelected="#26ae90"
+        title="Info" />
+    <tab
+        id="@+id/tab_survey"
+        icon="@drawable/ic_clipboard"
+        barColorWhenSelected="#ff6861"
+        title="Survey" />
+    <tab
+        id="@+id/tab_maps"
+        icon="@drawable/ic_map"
+        barColorWhenSelected="#bc871d"
+        title="Lokasi" />
+</tabs>

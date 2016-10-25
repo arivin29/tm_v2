@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/clik_list"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?attr/actionModeBackground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="5dp">
+
+        <com.tm.arifin.timbangan.widget.RalewayTextViewLight
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="Aldi Maulana"
+            android:textAllCaps="false"
+            android:textSize="@dimen/item_text_size_menu"
+            android:textColor="@color/bg_main"
+            android:id="@+id/tnama"
+            android:layout_weight=".5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center|right">
+            <com.tm.arifin.timbangan.widget.RalewayTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sudah Baca"
+                android:background="@drawable/shape_state_read"
+                android:textAllCaps="false"
+                android:textSize="@dimen/item_text_size_small"
+                android:textColor="#333"
+                android:id="@+id/tstatus" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <com.tm.arifin.timbangan.widget.RalewayTextViewLight
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="left"
+            android:text="137.64.01.02.007.004"
+            android:textAllCaps="false"
+            android:textSize="@dimen/item_text_size_small"
+            android:textColor="#333"
+            android:id="@+id/hp"
+            android:layout_weight=".5"
+            android:drawableLeft="@drawable/ic_smartphone_16" />
+
+        <com.tm.arifin.timbangan.widget.RalewayTextViewLight
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="JL. TENGKU LARAS 18"
+            android:textAllCaps="false"
+            android:id="@+id/talamat"
+            android:gravity="right"
+            android:layout_weight=".5"
+            android:textAlignment="viewEnd" />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_login_bg"/>
+</LinearLayout>
